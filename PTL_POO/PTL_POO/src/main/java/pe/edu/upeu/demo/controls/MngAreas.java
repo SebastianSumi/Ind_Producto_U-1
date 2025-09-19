@@ -46,7 +46,6 @@ public class MngAreas {
         listarAreas();
     }
 
-    /** Configura las columnas de la tabla */
     private void definirColumnas() {
         idCol = new TableColumn<>("ID");
         nombreCol = new TableColumn<>("Nombre");
@@ -59,7 +58,6 @@ public class MngAreas {
         tableAreas.getColumns().addAll(idCol, nombreCol, adminCol, puntajeCol, estadoCol, opcCol);
     }
 
-    /** Muestra la lista de áreas en la tabla */
     private void listarAreas() {
         idCol.setCellValueFactory(cellData -> cellData.getValue().getId());
         nombreCol.setCellValueFactory(cellData -> cellData.getValue().getNombre());

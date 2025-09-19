@@ -10,24 +10,25 @@ import pe.edu.upeu.demo.enums.AccesoEmpleado;
 import pe.edu.upeu.demo.enums.AreaEmpleado;
 import pe.edu.upeu.demo.enums.EstadoEmpleado;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @AllArgsConstructor
 @Getter
 @Setter
 public class Empleado {
+
     private IntegerProperty id;
     private AccesoEmpleado acceso;
     private StringProperty password;
     private StringProperty nombre;
-    private StringProperty apellido_paterno;
-    private StringProperty apellido_materno;
+    private StringProperty apellidoPaterno;
+    private StringProperty apellidoMaterno;
     private StringProperty telefono;
     private StringProperty email;
     private DoubleProperty salario;
     private EstadoEmpleado estado;
-    private AreaEmpleado estado_area;
+    private AreaEmpleado estadoArea;
     private Area area;
-    private ArrayList<String> Observaciones;
-    private DoubleProperty puntaje_promedio;
+    private List<String> observaciones;
+    private DoubleProperty puntajePromedio;
 }

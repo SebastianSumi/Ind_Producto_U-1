@@ -9,7 +9,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import pe.edu.upeu.demo.enums.EstadoArea;
 import pe.edu.upeu.demo.enums.Observacion;
+
 import java.util.ArrayList;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,7 +23,7 @@ public class Area {
     private StringProperty admin;
     private DoubleProperty puntajePromedio;
     private EstadoArea estado;
-    private ArrayList<Tarea> tareas;
-    private ArrayList<Empleado> empleados;
-    private ArrayList<Observacion> observaciones;
+    private List<Tarea> tareas = new ArrayList<>();
+    private List<Empleado> empleados = new ArrayList<>();
+    private List<Observacion> observaciones = new ArrayList<>();
 }
